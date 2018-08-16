@@ -1,0 +1,19 @@
+{
+  "name": "e2e_chat_utils",
+  "version": "1.0.0",
+  "description": "end-to-end chat utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grtsvetkov/e2e_chat_utils.git"
+  },
+  "author": "gr.tsvetkov@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grtsvetkov/e2e_chat_utils/issues"
+  },
+  "homepage": "https://github.com/grtsvetkov/e2e_chat_utils#readme"
+}
