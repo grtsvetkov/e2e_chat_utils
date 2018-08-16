@@ -1,13 +1,13 @@
 "use strict";
 
-const JSEncrypt = require('./jsencrypt.min');
+const JSEncrypt_LIB = require('./jsencrypt.min');
 
 class Client_e2e_Class {
     constructor(user_id, storage_name, display_warning_function) {
         this.user_id = user_id;
 
         this.key_size = 2048;
-        this.crypt = new JSEncrypt({default_key_size: this.key_size});
+        this.crypt = new JSEncrypt_LIB.JSEncrypt({default_key_size: this.key_size});
         this.cutMessageBy = this.key_size / 8; //256 chars
 
         this.storage_name = storage_name;
