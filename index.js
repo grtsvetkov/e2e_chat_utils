@@ -37,19 +37,17 @@ class Client_e2e_Class {
     initChat(chat_id, public_keys) {
         this.chat_id = chat_id;
 
-        if (!public_keys) {
-            public_keys = {};
-        }
-
         if (!this.storage[this.chat_id]) {
             this.storage[this.chat_id] = {
                 private: false,
-                public: public_keys
+                public: public_keys || {}
             }
+        } else if(public_keys) { //Обновляем публичные ключи
+            this.storage[this.chat_id].public = public_keys;
         }
 
         let newKey = false;
-
+        
         if (!this.storage[this.chat_id].private) { //Создаём новую пару ключей.
 
             this.display('Ключи шифрования для чата ' + this.chat_id + ' не найдены. Создание новых ключей шифрования');
