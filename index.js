@@ -1,4 +1,4 @@
-import JSEncrypt from 'jsencrypt';
+import JSEncrypt from 'jsencrypt.js';
 
 export default class Client_e2e_Class {
     constructor(user_id, storage_name, display_warning_function) {
