@@ -1,6 +1,8 @@
+"use strict";
+
 const JSEncrypt = require('./jsencrypt.min');
 
-export default class Client_e2e_Class {
+class Client_e2e_Class {
     constructor(user_id, storage_name, display_warning_function) {
         this.user_id = user_id;
 
@@ -100,3 +102,4 @@ export default class Client_e2e_Class {
     }
 }
 
+module.exports = Client_e2e_Class;
