@@ -1,4 +1,4 @@
-import JSEncrypt from 'jsencrypt';
+const JSEncrypt = require('./jsencrypt.min');
 
 export default class Client_e2e_Class {
     constructor(user_id, storage_name, display_warning_function) {
